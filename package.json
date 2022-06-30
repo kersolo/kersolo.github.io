@@ -1,0 +1,19 @@
+{
+  "name": "kersolo.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style2.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kersolo/kersolo.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kersolo/kersolo.github.io/issues"
+  },
+  "homepage": "https://github.com/kersolo/kersolo.github.io#readme"
+}
