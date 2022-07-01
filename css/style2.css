@@ -22,6 +22,27 @@ a {
   color: black;
 }
 
+.button {
+  padding: 15px;
+  border-radius: 30px;
+  border: none;
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: white;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.button_restau {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.button_resto {
+  width: 40%;
+  font-size: 15px;
+  font-weight: 500;
+}
+
 /* ******************************HEADER****************************** */
 .title {
   text-align: center;
@@ -45,15 +66,6 @@ a {
 #présentation p {
   opacity: 0.6;
   padding-bottom: 30px;
-}
-#présentation .button {
-  padding: 15px;
-  border-radius: 30px;
-  border: none;
-  background: linear-gradient(#FF79DA, #9356DC);
-  color: white;
-  font-weight: bold;
-  margin-bottom: 50px;
 }
 
 /* ******************************SECTION2****************************** */
@@ -144,8 +156,7 @@ a {
 .container {
   position: relative;
 }
-
-.container h3, p {
+.container h3, .container p {
   padding-left: 15px;
   margin: 0;
 }
@@ -221,17 +232,33 @@ main i:hover {
 }
 main h3 {
   text-transform: uppercase;
+  margin-left: 30px;
   font-weight: 100;
   opacity: 0.5;
   border-bottom: 3.5px solid #42d99f;
-  width: 10%;
+  width: 50px;
+  padding-bottom: 4px;
 }
 main article {
   background-color: white;
-  box-shadow: 3px 3px 3px 3px rgba(201, 199, 199, 0.464);
+  box-shadow: 3px 1px 3px 1px rgba(201, 199, 199, 0.464);
   border-radius: 10px;
   width: 90%;
   margin: auto;
+}
+main article h4 {
+  padding-top: 10px;
+  margin: 0 0 0 10px;
+}
+main article p {
+  padding: 0 0 10px 10px;
+  margin-top: 5px;
+}
+main article .prix {
+  float: right;
+  margin-top: -45px;
+  margin-right: 20px;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style2.css.map */
