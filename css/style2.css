@@ -56,6 +56,9 @@ a {
   padding: 15px;
   font-weight: bold;
 }
+#localization i {
+  padding-right: 30px;
+}
 
 /* ******************************SECTION1****************************** */
 #présentation {
