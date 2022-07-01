@@ -219,5 +219,19 @@ main i {
 main i:hover {
   color: #9356DC;
 }
+main h3 {
+  text-transform: uppercase;
+  font-weight: 100;
+  opacity: 0.5;
+  border-bottom: 3.5px solid #42d99f;
+  width: 10%;
+}
+main article {
+  background-color: white;
+  box-shadow: 3px 3px 3px 3px rgba(201, 199, 199, 0.464);
+  border-radius: 10px;
+  width: 90%;
+  margin: auto;
+}
 
 /*# sourceMappingURL=style2.css.map */
