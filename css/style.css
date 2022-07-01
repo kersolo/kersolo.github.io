@@ -68,6 +68,10 @@ h1
     margin: 15px;
     font-weight: bold;
 }
+#fontionnement li:hover
+{
+    background-color: #9256dc2b;
+}
 #fontionnement li p
 {
     float: left;
@@ -86,7 +90,46 @@ h1
     margin-left: 40px;
 }
 
+
+
                         /* ******************************SECTION3****************************** */
+
+/*
+#choix_resto
+{
+    background-color: rgba(16, 15, 15, 0.052);
+    margin-top: 70px;
+}
+#choix_resto h2
+{
+    padding-top: 40px;
+    margin-left: 30px;
+}
+#choix_resto h3
+{
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+#choix_resto p
+{
+    padding-bottom: 15px;
+}
+#choix_resto i
+{
+    font-size: 25px;
+    float: right;
+    margin-top: -50px;
+    margin-right: 30px;
+}
+.fa-solid
+{
+    color: rgba(255, 255, 255, 0);
+}
+#choix_resto i:hover
+{
+    color: #9356DC;
+}
+*/
 img
 {
     width: 100%;
@@ -120,6 +163,7 @@ a
 }
 .new
 {
+    font-weight: 600;
     background-color: #99E2D0;
     color: green;
     position: absolute;
