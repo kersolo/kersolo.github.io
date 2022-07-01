@@ -40,6 +40,22 @@ h1
     background-color: rgba(16, 15, 15, 0.052);
     padding: 10px;
 }
+#présentation p
+{
+    opacity: 0.6;
+    padding-bottom: 30px;
+}     
+.button
+{
+    padding: 15px;
+    border-radius: 30px;
+    border: none;
+    background: linear-gradient(#9356DC, #FF79DA);
+    color: white;
+    font-weight: bold;
+
+}
+
                         /* ******************************SECTION2****************************** */
 #fontionnement li
 {
