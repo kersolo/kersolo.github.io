@@ -263,4 +263,35 @@ main article .price {
   font-weight: bold;
 }
 
+/* **************************************************ANIMATIONS************************************************** */
+.first_starter, .first_main, .first_dessert {
+  animation: welcome 0.5s ease-in-out;
+}
+
+.second_starter, .second_main, .second_dessert {
+  animation: welcome 0.5s ease-in-out;
+  animation-delay: 0.3s;
+}
+
+.third_starter, .third_main, .third_dessert {
+  animation: welcome 0.5s ease-in-out;
+  animation-delay: 0.6s;
+}
+
+.fourth_starter {
+  animation: welcome 0.5s ease-in-out;
+  animation-delay: 0.9s;
+}
+
+@-webkit-keyframes welcome {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 /*# sourceMappingURL=style2.css.map */
