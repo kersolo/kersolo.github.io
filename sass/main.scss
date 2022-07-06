@@ -153,6 +153,10 @@ a
     .fa-solid
     {
     color: rgba(255, 255, 255, 0);
+    background: linear-gradient(#FF79DA,#9356DC);
+    -webkit-background-clip: text;
+    opacity: 0;
+    transition: 1s;
     }
     i
     {
@@ -162,7 +166,7 @@ a
     margin-right: 30px;
         &:hover
         {
-        color: #9356DC;
+            opacity: 1;
         }
     }
     img
@@ -271,6 +275,10 @@ main
     .fa-solid
     {
         color: rgba(255, 255, 255, 0);
+        background: linear-gradient(#FF79DA,#9356DC);
+        -webkit-background-clip: text;
+        opacity: 0;
+        transition: 1s;
     }
     i
     {
@@ -280,7 +288,7 @@ main
         margin-right: 30px;
         &:hover
         {
-            color: #9356DC;
+            opacity: 1;
         }
     }
     h3

@@ -129,6 +129,10 @@ a {
 }
 #resto_choise .fa-solid {
   color: rgba(255, 255, 255, 0);
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: 1s;
 }
 #resto_choise i {
   font-size: 25px;
@@ -137,7 +141,7 @@ a {
   margin-right: 30px;
 }
 #resto_choise i:hover {
-  color: #9356DC;
+  opacity: 1;
 }
 #resto_choise img {
   width: 100%;
@@ -226,6 +230,10 @@ main h1 {
 }
 main .fa-solid {
   color: rgba(255, 255, 255, 0);
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: 1s;
 }
 main i {
   font-size: 25px;
@@ -234,7 +242,7 @@ main i {
   margin-right: 30px;
 }
 main i:hover {
-  color: #9356DC;
+  opacity: 1;
 }
 main h3 {
   text-transform: uppercase;
