@@ -30,6 +30,11 @@ a
         color: white;
         font-weight: bold;
         margin-bottom: 50px;
+        &:hover
+        {
+            opacity:.8;
+            box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.41);
+        }
     }
 .button_restau
 {
