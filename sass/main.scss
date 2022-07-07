@@ -20,6 +20,7 @@ h1
 a
 {
     color: black;
+    text-decoration: none;
 }
 .button
     {
@@ -156,7 +157,7 @@ a
     background: linear-gradient(#FF79DA,#9356DC);
     -webkit-background-clip: text;
     opacity: 0;
-    transition: 1s;
+    transition: transform 1s;
     }
     i
     {
@@ -272,15 +273,15 @@ main
     {
         padding-left: 20px;
     }
-    .fa-solid
+    .solid__heart
     {
         color: rgba(255, 255, 255, 0);
         background: linear-gradient(#FF79DA,#9356DC);
         -webkit-background-clip: text;
         opacity: 0;
-        transition: 1s;
+        transition: transform 1s;
     }
-    i
+    .solid__heart, .regular__heart
     {
         font-size: 25px;
         float: right;
@@ -303,11 +304,59 @@ main
     }
     article
     {
+        opacity: 0;
         background-color: white;
         box-shadow: 3px 1px 3px 1px rgba(201, 199, 199, 0.464);
         border-radius: 10px;
         width: 90%;
         margin: auto;
+        margin-top: 20px;
+        display: flex;
+        overflow: hidden;
+        &:hover
+        {
+            .price
+            {
+                margin-right: 10px;
+                transition: 1s;
+            }
+            i
+            {
+                transform: rotate(360deg);
+                transition: transform 1s;
+            }
+            & > .test__progress
+            {
+                /*transform: scaleX(1);*/
+                opacity: 1;
+                margin-right: 0;
+                transition: margin-right 1s;
+            }
+        }
+        .test__progress
+        {
+            width: 100px;
+            border-radius: 0 10px 10px 0;
+            background-color: #42d99f;
+            /*transform: scaleX(0);*/
+            transition: transform 1s;
+            transform-origin: 100% 50%;
+            text-align: center;
+            opacity: 0;
+            margin-right: -20%;
+        }
+            i
+            {
+                border-radius: 50%;
+                background-color: white;
+                color: #42d99f;
+                padding: 10px;
+                font-size: 20px;
+                margin-top: 20px;
+                transform: rotate(-360deg);
+                transition: transform 1s;
+            }
+
         h4
         {
             padding-top: 10px;
@@ -320,10 +369,9 @@ main
         }
         .price
         {
-            float: right;
-            margin-top: -45px;
-            margin-right: 20px;
             font-weight: bold;
+            margin: auto;
+            margin-right: -50px;
         }
 
     }
@@ -331,23 +379,28 @@ main
 
 /* **************************************************ANIMATIONS************************************************** */
 
+/*@mixin anim {
+    animation: welcome 0.5s ease-in-out forwards;
+    transition: transform ;
+}*/
+
 .first_starter, .first_main, .first_dessert
 {
-    animation: welcome 0.5s ease-in-out;
+    animation: welcome 0.5s ease-in-out forwards;
 }
 .second_starter, .second_main, .second_dessert
 {
-    animation: welcome 0.5s ease-in-out;
+    animation: welcome 0.5s ease-in-out forwards;
     animation-delay: 0.3s;
 }
 .third_starter, .third_main, .third_dessert
 {
-    animation: welcome 0.5s ease-in-out;
+    animation: welcome 0.5s ease-in-out forwards;
     animation-delay: 0.6s;
 }
 .fourth_starter
 {
-    animation: welcome 0.5s ease-in-out;
+    animation: welcome 0.5s ease-in-out forwards;
     animation-delay: 0.9s;
 }
 
