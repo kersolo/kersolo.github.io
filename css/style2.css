@@ -16,13 +16,11 @@
 
 .button_restau {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 60px;
 }
 
 .button_resto {
-  width: 40%;
-  font-size: 15px;
-  font-weight: 500;
+  padding: 15px 50px;
 }
 
 body {
@@ -49,7 +47,7 @@ h1 {
 }
 
 a {
-  /*color: black;*/
+  color: black;
   text-decoration: none;
 }
 
@@ -66,6 +64,9 @@ footer h1 {
 }
 footer li {
   padding: 5px;
+}
+footer li a {
+  color: white;
 }
 footer i {
   padding-right: 15px;
@@ -101,12 +102,13 @@ footer .fa-handshake-angle {
   margin: 50px 0 30px 30px;
 }
 #operation li {
+  cursor: pointer;
   text-align: center;
   background-color: rgb(250, 250, 250);
   border-radius: 20px;
   box-shadow: 0px 2px 8px rgb(211, 209, 209);
   padding: 20px;
-  margin: 15px;
+  margin: 20px 20px 20px 0;
   font-weight: bold;
 }
 #operation li:hover {
@@ -225,6 +227,7 @@ main {
   background-color: rgb(253, 251, 251);
   border-radius: 40px 40px 0 0;
   padding-top: 30px;
+  padding-bottom: 100px;
 }
 main h1 {
   padding-left: 20px;
@@ -237,6 +240,7 @@ main .solid__heart {
   transition: 1s;
 }
 main .solid__heart, main .regular__heart {
+  cursor: pointer;
   font-size: 25px;
   float: right;
   margin-top: -50px;
@@ -255,6 +259,7 @@ main h3 {
   padding-bottom: 4px;
 }
 main article {
+  cursor: pointer;
   opacity: 0;
   background-color: white;
   box-shadow: 3px 1px 3px 1px rgb(211, 209, 209);
