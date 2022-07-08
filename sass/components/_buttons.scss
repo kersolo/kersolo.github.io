@@ -1,0 +1,26 @@
+.button
+    {
+        padding: 15px 30px ;
+        border-radius: 30px;
+        border: none;
+        background: linear-gradient($color-secondary,$color-primary);
+        color: white;
+        /*font-weight: bold;*/
+        /*margin-bottom: 50px;*/
+        &:hover
+        {
+            opacity:.8;
+            box-shadow: 0px 0px 5px 1px $color-shadow;
+        }
+    }
+.button_restau
+{
+    text-align: center;
+    margin-top: 50px;
+}
+.button_resto
+{
+    width: 40%;
+    font-size: 15px;
+    font-weight: 500;
+}

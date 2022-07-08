@@ -1,254 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+@import "./utils/variables";
+@import "./components/buttons";
+@import "./base/general_style";
+@import "./pages/home";
 
-$color-primary: #9356DC;
-$color-secondary: #FF79DA;
-$color-tertiary: #99E2D0;
-$color-shadow: rgb(211, 209, 209);
-$background-grey: rgb(250, 250, 250);
-
-
-body
-{
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-}
-ul
-{
-    list-style-type: none;
-}
-h1
-{
-    font-family: 'Shrikhand', cursif;
-    font-weight: 100;
-    margin: 0;
-    margin-bottom: 4px;
-}
-a
-{
-    color: black;
-    text-decoration: none;
-}
-.button
-    {
-        padding: 15px;
-        border-radius: 30px;
-        border: none;
-        background: linear-gradient($color-secondary,$color-primary);
-        color: white;
-        font-weight: bold;
-        margin-bottom: 50px;
-        &:hover
-        {
-            opacity:.8;
-            box-shadow: 0px 0px 5px 1px $color-shadow;
-        }
-    }
-.button_restau
-{
-    text-align: center;
-    margin-top: 50px;
-}
-.button_resto
-{
-    width: 40%;
-    font-size: 15px;
-    font-weight: 500;
-}
-                        /* ******************************HEADER****************************** */
-
-
-.title
-{
-    text-align: center;
-    box-shadow: 0px 3px 3px 0px $color-shadow;
-    padding: 10px;
-}
-#localization
-{
-    text-align: center;
-    background-color: rgba(3, 3, 3, 0.079);
-    padding: 15px;
-    font-weight: bold;
-    i
-    {
-        padding-right: 30px;
-    }
-}
-                        /* ******************************SECTION1****************************** */
-#presentation
-{
-    text-align: center;
-    background-color: $background-grey;
-    padding: 10px;
-    p
-    {
-        opacity: 0.6;
-        padding-bottom: 30px;
-    }   
-} 
-
-
-                        /* ******************************SECTION2****************************** */
-
-
-#operation
-{
-    h2
-    {
-        margin-left: 30px;
-    }
-    li
-    {
-        text-align: center;
-        background-color: $background-grey;
-        border-radius: 20px;
-        box-shadow:  0px 2px 8px $color-shadow;
-        padding: 20px;
-        margin: 15px;
-        font-weight: bold;
-        &:hover
-        {
-            background-color: #9256dc2b;
-            i
-            {
-                color: $color-primary;
-                opacity: 1;
-            }
-        }
-        p
-        {
-            float: left;
-            margin-left: -35px;
-            margin-top: -5px;
-            padding: 5px 10px 5px 10px;
-            background-color: $color-primary;
-            color: white;
-            font-weight: 100;
-            border-radius: 50px 50px 50px 50px;
-        }
-        i
-        {
-            opacity: 0.5;
-            float: left;
-            margin-left: 40px;
-        }
-    }
-}
-
-/* ******************************SECTION3****************************** */
-
-
-#resto_choise
-{
-    padding-bottom: 40px;
-    background-color: $background-grey;
-    margin-top: 70px;
-    h2
-    {
-    padding-top: 40px;
-    margin-left: 30px;
-    }
-    h3
-    {
-    padding-top: 10px;
-    padding-bottom: 5px;
-    }
-    p
-    {
-    padding-bottom: 15px;
-    }
-    .fa-solid
-    {
-    color: rgba(255, 255, 255, 0);
-    background: linear-gradient($color-secondary,$color-primary);
-    -webkit-background-clip: text;
-    opacity: 0;
-    transition: transform 1s;
-    }
-    i
-    {
-    font-size: 25px;
-    float: right;
-    margin-top: -50px;
-    margin-right: 30px;
-        &:hover
-        {
-            opacity: 1;
-        }
-    }
-    img
-    {
-        width: 100%;
-        /*height: 20vh;*/
-        height: 30vh;
-        border-radius: 20px 20px 0 0;
-        object-fit: cover;
-    }
-    figure
-    {
-        background-color: white;
-        border-radius: 20px;
-        box-shadow: 1px 2px 10px $color-shadow;
-        width: 90%;
-        margin: 30px auto;
-    }
-    a
-    {
-        text-decoration: none;
-        color: black;
-    }
-}
-
-                        /* ******************************Class_NEW****************************** */
-.resto_card 
-{
-    position: relative;
-    h3, p
-    {
-        padding-left: 15px;
-        margin: 0;
-    }
-}
-
-.new
-{
-    font-weight: 600;
-    background-color: $color-tertiary;
-    color: green;
-    position: absolute;
-    top: 10%;
-    right: 10%;
-    padding: 5px;
-    /*transform: translate(-50%, -50%);*/
-}
-                        /* ******************************FOOTER****************************** */
-footer
-{
-    padding: 20px 0 20px 0;
-    background-color: rgba(11, 11, 11, 0.774);
-    color: white;
-    font-weight: bold;
-    h1
-    {
-        margin-left: 40px;
-        font-size: 20px;
-        font-weight: 300;
-    }
-    li
-    {
-        padding: 5px;
-    }
-    i
-    {
-        padding-right: 15px;
-    }
-    .fa-handshake-angle
-    {
-        font-size: 11px;
-    }
-}
 
 /* **************************************************PAGES_RESTO************************************************** */
 
@@ -270,6 +26,9 @@ footer
         margin-left: 15px;
     }
 }
+
+                        /* ******************************MAIN****************************** */
+
 main
 {
     position: relative;
@@ -287,7 +46,7 @@ main
         background: linear-gradient($color-secondary,$color-primary);
         -webkit-background-clip: text;
         opacity: 0;
-        transition: transform 1s;
+        transition: 1s;
     }
     .solid__heart, .regular__heart
     {
@@ -335,7 +94,7 @@ main
             }
             & > .test__progress
             {
-                /*transform: scaleX(1);*/
+                transform: scaleX(1);
                 opacity: 1;
                 margin-right: 0;
                 transition: margin-right 1s;
@@ -346,7 +105,7 @@ main
             width: 100px;
             border-radius: 0 10px 10px 0;
             background-color: $color-tertiary;
-            /*transform: scaleX(0);*/
+            transform: scaleX(0);
             transition: transform 1s;
             transform-origin: 100% 50%;
             text-align: center;
@@ -358,8 +117,8 @@ main
                 border-radius: 50%;
                 background-color: white;
                 color: $color-tertiary;
-                padding: 10px;
-                font-size: 20px;
+                padding: 8px;
+                font-size: 15px;
                 margin-top: 20px;
                 transform: rotate(-360deg);
                 transition: transform 1s;
@@ -367,19 +126,20 @@ main
 
         h4
         {
-            padding-top: 10px;
+            padding-top: 15px;
             margin: 0 0 0 10px;
         }
         p
         {
-            padding: 0 0 10px 10px;
+            padding: 0 0 0 10px;
             margin-top: 5px;
         }
         .price
         {
             font-weight: bold;
             margin: auto;
-            margin-right: -50px;
+            margin-right: 10px;
+            margin-bottom: 10px;
         }
 
     }

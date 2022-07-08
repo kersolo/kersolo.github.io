@@ -1,35 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
-body {
-  font-family: "Roboto", sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-ul {
-  list-style-type: none;
-}
-
-h1 {
-  font-family: "Shrikhand", cursif;
-  font-weight: 100;
-  margin: 0;
-  margin-bottom: 4px;
-}
-
-a {
-  color: black;
-  text-decoration: none;
-}
-
 .button {
-  padding: 15px;
+  padding: 15px 30px;
   border-radius: 30px;
   border: none;
   background: linear-gradient(#FF79DA, #9356DC);
   color: white;
-  font-weight: bold;
-  margin-bottom: 50px;
+  /*font-weight: bold;*/
+  /*margin-bottom: 50px;*/
 }
 .button:hover {
   opacity: 0.8;
@@ -47,11 +25,53 @@ a {
   font-weight: 500;
 }
 
-/* ******************************HEADER****************************** */
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
 .title {
   text-align: center;
   box-shadow: 0px 3px 3px 0px rgb(211, 209, 209);
   padding: 10px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  font-family: "Shrikhand", cursif;
+  font-weight: 100;
+  margin: 0;
+  margin-bottom: 4px;
+}
+
+a {
+  /*color: black;*/
+  text-decoration: none;
+}
+
+footer {
+  padding: 20px 0 20px 0;
+  background-color: rgba(11, 11, 11, 0.774);
+  color: white;
+  font-weight: bold;
+}
+footer h1 {
+  margin-left: 40px;
+  font-size: 20px;
+  font-weight: 300;
+}
+footer li {
+  padding: 5px;
+}
+footer i {
+  padding-right: 15px;
+}
+footer .fa-handshake-angle {
+  font-size: 11px;
 }
 
 #localization {
@@ -69,6 +89,7 @@ a {
   text-align: center;
   background-color: rgb(250, 250, 250);
   padding: 10px;
+  padding-bottom: 80px;
 }
 #presentation p {
   opacity: 0.6;
@@ -77,7 +98,7 @@ a {
 
 /* ******************************SECTION2****************************** */
 #operation h2 {
-  margin-left: 30px;
+  margin: 50px 0 30px 30px;
 }
 #operation li {
   text-align: center;
@@ -133,7 +154,7 @@ a {
   background: linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;
   opacity: 0;
-  transition: transform 1s;
+  transition: 1s;
 }
 #resto_choise i {
   font-size: 25px;
@@ -183,28 +204,6 @@ a {
   /*transform: translate(-50%, -50%);*/
 }
 
-/* ******************************FOOTER****************************** */
-footer {
-  padding: 20px 0 20px 0;
-  background-color: rgba(11, 11, 11, 0.774);
-  color: white;
-  font-weight: bold;
-}
-footer h1 {
-  margin-left: 40px;
-  font-size: 20px;
-  font-weight: 300;
-}
-footer li {
-  padding: 5px;
-}
-footer i {
-  padding-right: 15px;
-}
-footer .fa-handshake-angle {
-  font-size: 11px;
-}
-
 /* **************************************************PAGES_RESTO************************************************** */
 /* ******************************HEADER****************************** */
 .header_restau img {
@@ -219,6 +218,7 @@ footer .fa-handshake-angle {
   margin-left: 15px;
 }
 
+/* ******************************MAIN****************************** */
 main {
   position: relative;
   margin-top: -60px;
@@ -234,7 +234,7 @@ main .solid__heart {
   background: linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;
   opacity: 0;
-  transition: transform 1s;
+  transition: 1s;
 }
 main .solid__heart, main .regular__heart {
   font-size: 25px;
@@ -274,7 +274,7 @@ main article:hover i {
   transition: transform 1s;
 }
 main article:hover > .test__progress {
-  /*transform: scaleX(1);*/
+  transform: scaleX(1);
   opacity: 1;
   margin-right: 0;
   transition: margin-right 1s;
@@ -283,7 +283,7 @@ main article .test__progress {
   width: 100px;
   border-radius: 0 10px 10px 0;
   background-color: #99E2D0;
-  /*transform: scaleX(0);*/
+  transform: scaleX(0);
   transition: transform 1s;
   transform-origin: 100% 50%;
   text-align: center;
@@ -294,24 +294,25 @@ main article i {
   border-radius: 50%;
   background-color: white;
   color: #99E2D0;
-  padding: 10px;
-  font-size: 20px;
+  padding: 8px;
+  font-size: 15px;
   margin-top: 20px;
   transform: rotate(-360deg);
   transition: transform 1s;
 }
 main article h4 {
-  padding-top: 10px;
+  padding-top: 15px;
   margin: 0 0 0 10px;
 }
 main article p {
-  padding: 0 0 10px 10px;
+  padding: 0 0 0 10px;
   margin-top: 5px;
 }
 main article .price {
   font-weight: bold;
   margin: auto;
-  margin-right: -50px;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 /* **************************************************ANIMATIONS************************************************** */

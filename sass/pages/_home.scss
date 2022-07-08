@@ -1,0 +1,159 @@
+#localization
+{
+    text-align: center;
+    background-color: rgba(3, 3, 3, 0.079);
+    padding: 15px;
+    font-weight: bold;
+    i
+    {
+        padding-right: 30px;
+    }
+}
+                        /* ******************************SECTION1****************************** */
+#presentation
+{
+    text-align: center;
+    background-color: $background-grey;
+    padding: 10px;
+    padding-bottom: 80px;
+    p
+    {
+        opacity: 0.6;
+        padding-bottom: 30px;
+    }   
+} 
+
+
+                        /* ******************************SECTION2****************************** */
+
+
+#operation
+{
+    h2
+    {
+        margin: 50px 0 30px 30px;
+    }
+    li
+    {
+        text-align: center;
+        background-color: $background-grey;
+        border-radius: 20px;
+        box-shadow:  0px 2px 8px $color-shadow;
+        padding: 20px;
+        margin: 15px;
+        font-weight: bold;
+        &:hover
+        {
+            background-color: #9256dc2b;
+            i
+            {
+                color: $color-primary;
+                opacity: 1;
+            }
+        }
+        p
+        {
+            float: left;
+            margin-left: -35px;
+            margin-top: -5px;
+            padding: 5px 10px 5px 10px;
+            background-color: $color-primary;
+            color: white;
+            font-weight: 100;
+            border-radius: 50px 50px 50px 50px;
+        }
+        i
+        {
+            opacity: 0.5;
+            float: left;
+            margin-left: 40px;
+        }
+    }
+}
+
+/* ******************************SECTION3****************************** */
+
+
+#resto_choise
+{
+    padding-bottom: 40px;
+    background-color: $background-grey;
+    margin-top: 70px;
+    h2
+    {
+    padding-top: 40px;
+    margin-left: 30px;
+    }
+    h3
+    {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    }
+    p
+    {
+    padding-bottom: 15px;
+    }
+    .fa-solid
+    {
+    color: rgba(255, 255, 255, 0);
+    background: linear-gradient($color-secondary,$color-primary);
+    -webkit-background-clip: text;
+    opacity: 0;
+    transition: 1s;
+    }
+    i
+    {
+    font-size: 25px;
+    float: right;
+    margin-top: -50px;
+    margin-right: 30px;
+        &:hover
+        {
+            opacity: 1;
+        }
+    }
+    img
+    {
+        width: 100%;
+        /*height: 20vh;*/
+        height: 30vh;
+        border-radius: 20px 20px 0 0;
+        object-fit: cover;
+    }
+    figure
+    {
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 1px 2px 10px $color-shadow;
+        width: 90%;
+        margin: 30px auto;
+    }
+    a
+    {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+                        /* ******************************Class_NEW****************************** */
+.resto_card 
+{
+    position: relative;
+    h3, p
+    {
+        padding-left: 15px;
+        margin: 0;
+    }
+}
+
+.new
+{
+    font-weight: 600;
+    background-color: $color-tertiary;
+    color: green;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    padding: 5px;
+    /*transform: translate(-50%, -50%);*/
+}

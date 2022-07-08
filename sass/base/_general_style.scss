@@ -1,0 +1,53 @@
+body
+{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.title
+{
+    text-align: center;
+    box-shadow: 0px 3px 3px 0px $color-shadow;
+    padding: 10px;
+}
+ul
+{
+    list-style-type: none;
+}
+h1
+{
+    font-family: 'Shrikhand', cursif;
+    font-weight: 100;
+    margin: 0;
+    margin-bottom: 4px;
+}
+a
+{
+    /*color: black;*/
+    text-decoration: none;
+}
+footer
+{
+    padding: 20px 0 20px 0;
+    background-color: rgba(11, 11, 11, 0.774);
+    color: white;
+    font-weight: bold;
+    h1
+    {
+        margin-left: 40px;
+        font-size: 20px;
+        font-weight: 300;
+    }
+    li
+    {
+        padding: 5px;
+    }
+    i
+    {
+        padding-right: 15px;
+    }
+    .fa-handshake-angle
+    {
+        font-size: 11px;
+    }
+}
