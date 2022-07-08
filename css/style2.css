@@ -305,13 +305,22 @@ main article i {
   transform: rotate(-360deg);
   transition: transform 1s;
 }
-main article h4 {
+main article .des {
+  overflow: hidden;
+  white-space: nowrap;
+  margin-right: 10px;
+}
+main article .des h4 {
   padding-top: 15px;
   margin: 0 0 0 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-main article p {
+main article .des p {
   padding: 0 0 0 10px;
   margin-top: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 main article .price {
   font-weight: bold;
