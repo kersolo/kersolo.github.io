@@ -83,7 +83,6 @@ main
         margin-top: 20px;
         display: flex;
         overflow: hidden;
-
         &:hover
         {
             .price
@@ -106,15 +105,16 @@ main
         }
         .test__progress
         {
-            width: 100px;
+            width: 80px;
             border-radius: 0 10px 10px 0;
             background-color: $color-tertiary;
             transform: scaleX(0);
             transition: transform 1s;
-            transform-origin: 100% 50%;
+            // transform-origin: 100% 50%;
             text-align: center;
             opacity: 0;
-            margin-right: -20%;
+            margin-right: -80px;
+            
         }
             i
             {
@@ -126,6 +126,13 @@ main
                 margin-top: 20px;
                 transform: rotate(-360deg);
                 transition: transform 1s;
+            }
+            .price
+            {
+                font-weight: bold;
+                margin: auto;
+                margin-bottom: 10px;
+                margin-right: 20px;
             }
         .ellipsis
         {
@@ -148,14 +155,6 @@ main
             text-overflow: ellipsis;
         }
         }
-        .price
-        {
-            font-weight: bold;
-            margin: auto;
-            margin-right: 10px;
-            margin-bottom: 10px;
-        }
-
     }
 }
 

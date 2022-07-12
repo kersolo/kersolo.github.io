@@ -285,15 +285,14 @@ main article:hover > .test__progress {
   transition: margin-right 1s;
 }
 main article .test__progress {
-  width: 100px;
+  width: 80px;
   border-radius: 0 10px 10px 0;
   background-color: #99E2D0;
   transform: scaleX(0);
   transition: transform 1s;
-  transform-origin: 100% 50%;
   text-align: center;
   opacity: 0;
-  margin-right: -20%;
+  margin-right: -80px;
 }
 main article i {
   border-radius: 50%;
@@ -304,6 +303,12 @@ main article i {
   margin-top: 20px;
   transform: rotate(-360deg);
   transition: transform 1s;
+}
+main article .price {
+  font-weight: bold;
+  margin: auto;
+  margin-bottom: 10px;
+  margin-right: 20px;
 }
 main article .ellipsis {
   overflow: hidden;
@@ -321,12 +326,6 @@ main article .ellipsis p {
   margin-top: 5px;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-main article .price {
-  font-weight: bold;
-  margin: auto;
-  margin-right: 10px;
-  margin-bottom: 10px;
 }
 
 /* **************************************************ANIMATIONS************************************************** */
