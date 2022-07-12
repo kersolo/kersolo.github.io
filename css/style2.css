@@ -362,5 +362,36 @@ main article .ellipsis p {
     opacity: 1;
   }
 }
+@media screen and (min-width: 800px) {
+  #pc {
+    display: flex;
+  }
+  #operation {
+    width: 50%;
+  }
+  #presentation {
+    width: 50%;
+    background-color: white;
+    padding-top: 30px;
+  }
+  #presentation p {
+    margin-top: 50px;
+    margin-bottom: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  #presentation h2 {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+  #test {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  #test .resto {
+    width: 40%;
+  }
+}
 
 /*# sourceMappingURL=style2.css.map */
