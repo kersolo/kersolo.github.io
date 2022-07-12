@@ -305,18 +305,18 @@ main article i {
   transform: rotate(-360deg);
   transition: transform 1s;
 }
-main article .des {
+main article .ellipsis {
   overflow: hidden;
   white-space: nowrap;
   margin-right: 10px;
 }
-main article .des h4 {
+main article .ellipsis h4 {
   padding-top: 15px;
   margin: 0 0 0 10px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-main article .des p {
+main article .ellipsis p {
   padding: 0 0 0 10px;
   margin-top: 5px;
   overflow: hidden;
