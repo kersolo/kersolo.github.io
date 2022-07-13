@@ -69,7 +69,6 @@ main
         opacity: 0.5;
         border-bottom: 4px solid $color-tertiary;
         width: 50px;
-        padding-bottom: 4px;
     }
     article
     {
@@ -97,7 +96,7 @@ main
             }
             & > .test__progress
             {
-                transform: scaleX(1);
+                // transform: scaleX(1);
                 opacity: 1;
                 margin-right: 0;
                 transition: margin-right 1s;
@@ -108,9 +107,9 @@ main
             width: 80px;
             border-radius: 0 10px 10px 0;
             background-color: $color-tertiary;
-            transform: scaleX(0);
+            // transform: scaleX(0);
             transition: transform 1s;
-            // transform-origin: 100% 50%;
+            transform-origin: 100% 50%;
             text-align: center;
             opacity: 0;
             margin-right: -80px;
@@ -123,7 +122,7 @@ main
                 color: $color-tertiary;
                 padding: 8px;
                 font-size: 15px;
-                margin-top: 20px;
+                margin: 20px;
                 transform: rotate(-360deg);
                 transition: transform 1s;
             }
@@ -149,6 +148,7 @@ main
     
         p
         {
+            font-size: 14px;
             padding: 0 0 0 10px;
             margin-top: 5px;
             overflow: hidden;
@@ -223,8 +223,7 @@ main
         }
         h2
         {
-            margin-left: 80px;
-            margin-right: 80px;
+
         }
     }
     #test
@@ -237,5 +236,18 @@ main
             width: 40%;
         }
 
+    }
+}
+@media screen and (min-width: 1100px)
+{
+    #res_menus
+    {
+        display: flex;
+        article {
+            width: 90%;
+        }
+        section {
+            width: 33%;
+        }
     }
 }

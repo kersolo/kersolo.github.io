@@ -256,7 +256,6 @@ main h3 {
   opacity: 0.5;
   border-bottom: 4px solid #99E2D0;
   width: 50px;
-  padding-bottom: 4px;
 }
 main article {
   cursor: pointer;
@@ -279,7 +278,6 @@ main article:hover i {
   transition: transform 1s;
 }
 main article:hover > .test__progress {
-  transform: scaleX(1);
   opacity: 1;
   margin-right: 0;
   transition: margin-right 1s;
@@ -288,8 +286,8 @@ main article .test__progress {
   width: 80px;
   border-radius: 0 10px 10px 0;
   background-color: #99E2D0;
-  transform: scaleX(0);
   transition: transform 1s;
+  transform-origin: 100% 50%;
   text-align: center;
   opacity: 0;
   margin-right: -80px;
@@ -300,7 +298,7 @@ main article i {
   color: #99E2D0;
   padding: 8px;
   font-size: 15px;
-  margin-top: 20px;
+  margin: 20px;
   transform: rotate(-360deg);
   transition: transform 1s;
 }
@@ -322,6 +320,7 @@ main article .ellipsis h4 {
   text-overflow: ellipsis;
 }
 main article .ellipsis p {
+  font-size: 14px;
   padding: 0 0 0 10px;
   margin-top: 5px;
   overflow: hidden;
@@ -380,10 +379,6 @@ main article .ellipsis p {
     margin-left: 50px;
     margin-right: 50px;
   }
-  #presentation h2 {
-    margin-left: 80px;
-    margin-right: 80px;
-  }
   #test {
     display: flex;
     flex-wrap: wrap;
@@ -391,6 +386,17 @@ main article .ellipsis p {
   }
   #test .resto {
     width: 40%;
+  }
+}
+@media screen and (min-width: 1100px) {
+  #res_menus {
+    display: flex;
+  }
+  #res_menus article {
+    width: 90%;
+  }
+  #res_menus section {
+    width: 33%;
   }
 }
 
