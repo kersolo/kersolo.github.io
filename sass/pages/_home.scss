@@ -158,3 +158,58 @@
     padding: 5px;
     /*transform: translate(-50%, -50%);*/
 }
+
+/* ****************************************LOADING_SPINNER**************************************** */
+
+
+.loader {
+    //background: linear-gradient($color-secondary,$color-primary);
+    background: grey;
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    opacity: 0.8;
+    // animation: load 3ms;
+    animation: load 0s 3s forwards;
+    animation-fill-mode: forwards;
+    // animation-timing-function: cubic-bezier(1,0,.49,.49);
+    // animation-delay: 2s;
+    .spinner {
+        border: 10px solid;
+        border-top-color: $color-primary;
+        border-right-color: $color-secondary;
+        border-left-color: $color-tertiary;
+        border-bottom-color: $color-shadow;
+        width: 50px;
+        height: 50px;
+        margin: auto;
+        position: fixed;
+        inset: 0;
+        border-radius: 50%;
+        animation: spin 1s infinite;
+    }
+}
+
+@-webkit-keyframes spin
+{
+    from
+    {
+        transform: rotate(0deg);
+    }
+    to
+    {
+        transform: rotate(360deg);
+    }
+
+}
+@-webkit-keyframes load
+{
+    from
+    {
+        transform: scaleY(1);
+    }
+    to
+    {
+        transform: scaleY(0);
+    }
+}

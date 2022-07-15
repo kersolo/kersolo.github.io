@@ -206,6 +206,47 @@ footer .fa-handshake-angle {
   /*transform: translate(-50%, -50%);*/
 }
 
+/* ****************************************LOADING_SPINNER**************************************** */
+.loader {
+  background: grey;
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  opacity: 0.8;
+  animation: load 0s 3s forwards;
+  animation-fill-mode: forwards;
+}
+.loader .spinner {
+  border: 10px solid;
+  border-top-color: #9356DC;
+  border-right-color: #FF79DA;
+  border-left-color: #99E2D0;
+  border-bottom-color: rgb(211, 209, 209);
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  position: fixed;
+  inset: 0;
+  border-radius: 50%;
+  animation: spin 1s infinite;
+}
+
+@-webkit-keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes load {
+  from {
+    transform: scaleY(1);
+  }
+  to {
+    transform: scaleY(0);
+  }
+}
 /* **************************************************PAGES_RESTO************************************************** */
 /* ******************************HEADER****************************** */
 .header_restau img {
