@@ -206,6 +206,47 @@ footer .fa-handshake-angle {
   /*transform: translate(-50%, -50%);*/
 }
 
+/* ****************************************LOADING_SPINNER**************************************** */
+.loader {
+  background: grey;
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  opacity: 0.8;
+  animation: load 0s 3s forwards;
+  animation-fill-mode: forwards;
+}
+.loader .spinner {
+  border: 10px solid;
+  border-top-color: #9356DC;
+  border-right-color: #FF79DA;
+  border-left-color: #99E2D0;
+  border-bottom-color: rgb(211, 209, 209);
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  position: fixed;
+  inset: 0;
+  border-radius: 50%;
+  animation: spin 1s infinite;
+}
+
+@-webkit-keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes load {
+  from {
+    transform: scaleY(1);
+  }
+  to {
+    transform: scaleY(0);
+  }
+}
 /* **************************************************PAGES_RESTO************************************************** */
 /* ******************************HEADER****************************** */
 .header_restau img {
@@ -256,7 +297,6 @@ main h3 {
   opacity: 0.5;
   border-bottom: 4px solid #99E2D0;
   width: 50px;
-  padding-bottom: 4px;
 }
 main article {
   cursor: pointer;
@@ -270,30 +310,20 @@ main article {
   display: flex;
   overflow: hidden;
 }
-main article:hover .price {
-  margin-right: 10px;
-  transition: 1s;
-}
 main article:hover i {
   transform: rotate(360deg);
   transition: transform 1s;
 }
 main article:hover > .test__progress {
-  transform: scaleX(1);
-  opacity: 1;
   margin-right: 0;
-  transition: margin-right 1s;
 }
 main article .test__progress {
-  width: 100px;
+  width: 80px;
   border-radius: 0 10px 10px 0;
   background-color: #99E2D0;
-  transform: scaleX(0);
-  transition: transform 1s;
-  transform-origin: 100% 50%;
   text-align: center;
-  opacity: 0;
-  margin-right: -20%;
+  margin-right: -80px;
+  transition: all 1s;
 }
 main article i {
   border-radius: 50%;
@@ -301,9 +331,15 @@ main article i {
   color: #99E2D0;
   padding: 8px;
   font-size: 15px;
-  margin-top: 20px;
+  margin: 20px;
   transform: rotate(-360deg);
   transition: transform 1s;
+}
+main article .price {
+  font-weight: bold;
+  margin: auto;
+  margin-bottom: 10px;
+  margin-right: 20px;
 }
 main article .ellipsis {
   overflow: hidden;
@@ -317,16 +353,11 @@ main article .ellipsis h4 {
   text-overflow: ellipsis;
 }
 main article .ellipsis p {
+  font-size: 14px;
   padding: 0 0 0 10px;
   margin-top: 5px;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-main article .price {
-  font-weight: bold;
-  margin: auto;
-  margin-right: 10px;
-  margin-bottom: 10px;
 }
 
 /* **************************************************ANIMATIONS************************************************** */
@@ -361,6 +392,92 @@ main article .price {
   to {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+@media screen and (min-width: 800px) {
+  #pc {
+    display: flex;
+  }
+  #operation {
+    width: 50%;
+  }
+  #presentation {
+    width: 50%;
+    background-color: white;
+    padding-top: 30px;
+  }
+  #presentation p {
+    margin-top: 50px;
+    margin-bottom: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  #test {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  #test .resto {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 800px) {
+  .button_restau {
+    margin-top: 100px;
+  }
+  .button_restau .button_resto {
+    padding: 15px 100px;
+  }
+  .header_restau img {
+    height: 400px;
+  }
+  footer {
+    text-align: center;
+  }
+  footer ul {
+    display: flex;
+  }
+  footer ul li {
+    width: 50%;
+    margin: 20px 0;
+  }
+}
+@media (min-width: 800px) and (max-width: 1132px) {
+  #res_menus {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #res_menus section {
+    width: 50%;
+    margin: auto;
+    margin-top: 30px;
+  }
+  #res_menus .desserts {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+  }
+  .button_restau {
+    margin-top: 100px;
+  }
+  .button_restau .button_resto {
+    padding: 15px 100px;
+  }
+}
+@media screen and (min-width: 1132px) {
+  #res_menus {
+    display: flex;
+    margin-top: 30px;
+  }
+  #res_menus article {
+    width: 90%;
+    margin-bottom: 50px;
+  }
+  #res_menus section {
+    width: 33%;
+  }
+  .button_restau {
+    margin-top: 60px;
   }
 }
 
