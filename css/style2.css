@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
+/* ************************************************** BUTTON ************************************************** */
 .button {
   padding: 15px 30px;
   border-radius: 30px;
@@ -24,6 +25,7 @@
   padding: 15px 50px;
 }
 
+/* ************************************************** general_style ************************************************** */
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
@@ -76,6 +78,28 @@ footer .fa-handshake-angle {
   font-size: 11px;
 }
 
+/* ****************************** HEART ****************************** */
+.solid__heart {
+  color: rgba(255, 255, 255, 0);
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: 1s;
+}
+
+/* ****************************** heart_animation ****************************** */
+.solid__heart, .regular__heart {
+  cursor: pointer;
+  font-size: 25px;
+  float: right;
+  margin-top: -50px;
+  margin-right: 30px;
+}
+.solid__heart:hover, .regular__heart:hover {
+  opacity: 1;
+}
+
+/* ************************************************** home_page ************************************************** */
 #localization {
   text-align: center;
   background-color: rgba(3, 3, 3, 0.079);
@@ -152,22 +176,6 @@ footer .fa-handshake-angle {
 #resto_choise p {
   padding-bottom: 15px;
 }
-#resto_choise .fa-solid {
-  color: rgba(255, 255, 255, 0);
-  background: linear-gradient(#FF79DA, #9356DC);
-  -webkit-background-clip: text;
-  opacity: 0;
-  transition: 1s;
-}
-#resto_choise i {
-  font-size: 25px;
-  float: right;
-  margin-top: -50px;
-  margin-right: 30px;
-}
-#resto_choise i:hover {
-  opacity: 1;
-}
 #resto_choise img {
   width: 100%;
   /*height: 20vh;*/
@@ -207,7 +215,8 @@ footer .fa-handshake-angle {
   /*transform: translate(-50%, -50%);*/
 }
 
-/* ****************************************LOADING_SPINNER**************************************** */
+/* ************************************************** LOADING_SPINNER ************************************************** */
+/* ************************************************** LOADING_SPINNER ************************************************** */
 .loader {
   background: grey;
   position: fixed;
@@ -249,7 +258,7 @@ footer .fa-handshake-angle {
   }
 }
 /* **************************************************PAGES_RESTO************************************************** */
-/* ******************************HEADER****************************** */
+/* ****************************** HEADER ****************************** */
 .header_restau img {
   width: 100%;
   height: 40vh;
@@ -262,7 +271,17 @@ footer .fa-handshake-angle {
   margin-left: 15px;
 }
 
-/* ******************************MAIN****************************** */
+/* ****************************** MAIN ****************************** */
+@-webkit-keyframes welcome {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 main {
   position: relative;
   margin-top: -60px;
@@ -270,6 +289,7 @@ main {
   border-radius: 40px 40px 0 0;
   padding-top: 30px;
   padding-bottom: 100px;
+  /* ****************************** apparition_animation****************************** */
 }
 main .ksd {
   animation: welcome 0.5s ease-in-out forwards;
@@ -301,25 +321,38 @@ main .ksd--8 {
 main .ksd--9 {
   animation-delay: 2.7s;
 }
+main .ksd--s1 {
+  animation-delay: 0.3s;
+}
+main .ksd--s2 {
+  animation-delay: 0.6s;
+}
+main .ksd--s3 {
+  animation-delay: 0.9s;
+}
+main .ksd--s4 {
+  animation-delay: 1.2s;
+}
+main .ksd--s5 {
+  animation-delay: 1.5s;
+}
+main .ksd--s6 {
+  animation-delay: 1.8s;
+}
+main .ksd--s7 {
+  animation-delay: 2.1s;
+}
+main .ksd--s8 {
+  animation-delay: 2.4s;
+}
+main .ksd--s9 {
+  animation-delay: 2.7s;
+}
+main .ksd--s10 {
+  animation-delay: 3s;
+}
 main h1 {
   padding-left: 20px;
-}
-main .solid__heart {
-  color: rgba(255, 255, 255, 0);
-  background: linear-gradient(#FF79DA, #9356DC);
-  -webkit-background-clip: text;
-  opacity: 0;
-  transition: 1s;
-}
-main .solid__heart, main .regular__heart {
-  cursor: pointer;
-  font-size: 25px;
-  float: right;
-  margin-top: -50px;
-  margin-right: 30px;
-}
-main .solid__heart:hover, main .regular__heart:hover {
-  opacity: 1;
 }
 main h3 {
   text-transform: uppercase;
@@ -329,7 +362,9 @@ main h3 {
   border-bottom: 4px solid #99E2D0;
   width: 50px;
 }
-main article {
+
+/* ****************************** ARTICLE_animation****************************** */
+article {
   cursor: pointer;
   opacity: 0;
   background-color: white;
@@ -341,14 +376,14 @@ main article {
   display: flex;
   overflow: hidden;
 }
-main article:hover i {
+article:hover i {
   transform: rotate(360deg);
   transition: transform 1s;
 }
-main article:hover > .test__progress {
+article:hover > .test__progress {
   margin-right: 0;
 }
-main article .test__progress {
+article .test__progress {
   width: 80px;
   border-radius: 0 10px 10px 0;
   background-color: #99E2D0;
@@ -356,7 +391,7 @@ main article .test__progress {
   margin-right: -80px;
   transition: all 1s;
 }
-main article i {
+article i {
   border-radius: 50%;
   background-color: white;
   color: #99E2D0;
@@ -366,24 +401,24 @@ main article i {
   transform: rotate(-360deg);
   transition: transform 1s;
 }
-main article .price {
+article .price {
   font-weight: bold;
   margin: auto;
   margin-bottom: 10px;
   margin-right: 20px;
 }
-main article .ellipsis {
+article .ellipsis {
   overflow: hidden;
   white-space: nowrap;
   margin-right: 10px;
 }
-main article .ellipsis h4 {
+article .ellipsis h4 {
   padding-top: 15px;
   margin: 0 0 0 10px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-main article .ellipsis p {
+article .ellipsis p {
   font-size: 14px;
   padding: 0 0 0 10px;
   margin-top: 5px;
@@ -392,16 +427,8 @@ main article .ellipsis p {
 }
 
 /* **************************************************ANIMATIONS************************************************** */
-@-webkit-keyframes welcome {
-  from {
-    transform: translateY(10px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
+/* ************************************************** RESPONSIVE ************************************************** */
+/* ************************************************** RESPONSIVE ************************************************** */
 @media screen and (min-width: 800px) {
   #pc {
     display: flex;
