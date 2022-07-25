@@ -1,0 +1,42 @@
+/* ********** appears_anim ********** */
+
+@-webkit-keyframes welcome
+{
+    from
+    {
+              transform: translateY(10px);
+              opacity: 0;
+    }
+    to
+    {
+              transform: translateY(0);
+              opacity: 1;
+    }
+}
+
+
+/* ********** loading_spinner ********** */
+
+@-webkit-keyframes spin
+{
+    from
+    {
+        transform: rotate(0deg);
+    }
+    to
+    {
+        transform: rotate(360deg);
+    }
+
+}
+@-webkit-keyframes load
+{
+    from
+    {
+        transform: scaleY(1);
+    }
+    to
+    {
+        transform: scaleY(0);
+    }
+}
