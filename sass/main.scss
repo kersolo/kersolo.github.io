@@ -116,3 +116,14 @@
         margin-top: 60px;
     }
 }
+@media screen and (max-width: 270px)
+{
+    .button
+    {
+        font-size: 12px;
+    }
+    .solid__heart, .regular__heart
+    {
+        margin-top: -40px;
+    }
+}
