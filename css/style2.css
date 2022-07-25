@@ -291,64 +291,64 @@ main {
   padding-bottom: 100px;
   /* ****************************** apparition_animation****************************** */
 }
-main .ksd {
+main .appears_anim {
   animation: welcome 0.5s ease-in-out forwards;
 }
-main .ksd--1 {
+main .appears_anim--1 {
   animation-delay: 0.3s;
 }
-main .ksd--2 {
+main .appears_anim--2 {
   animation-delay: 0.6s;
 }
-main .ksd--3 {
+main .appears_anim--3 {
   animation-delay: 0.9s;
 }
-main .ksd--4 {
+main .appears_anim--4 {
   animation-delay: 1.2s;
 }
-main .ksd--5 {
+main .appears_anim--5 {
   animation-delay: 1.5s;
 }
-main .ksd--6 {
+main .appears_anim--6 {
   animation-delay: 1.8s;
 }
-main .ksd--7 {
+main .appears_anim--7 {
   animation-delay: 2.1s;
 }
-main .ksd--8 {
+main .appears_anim--8 {
   animation-delay: 2.4s;
 }
-main .ksd--9 {
+main .appears_anim--9 {
   animation-delay: 2.7s;
 }
-main .ksd--s1 {
+main .appears_anim--s1 {
   animation-delay: 0.3s;
 }
-main .ksd--s2 {
+main .appears_anim--s2 {
   animation-delay: 0.6s;
 }
-main .ksd--s3 {
+main .appears_anim--s3 {
   animation-delay: 0.9s;
 }
-main .ksd--s4 {
+main .appears_anim--s4 {
   animation-delay: 1.2s;
 }
-main .ksd--s5 {
+main .appears_anim--s5 {
   animation-delay: 1.5s;
 }
-main .ksd--s6 {
+main .appears_anim--s6 {
   animation-delay: 1.8s;
 }
-main .ksd--s7 {
+main .appears_anim--s7 {
   animation-delay: 2.1s;
 }
-main .ksd--s8 {
+main .appears_anim--s8 {
   animation-delay: 2.4s;
 }
-main .ksd--s9 {
+main .appears_anim--s9 {
   animation-delay: 2.7s;
 }
-main .ksd--s10 {
+main .appears_anim--s10 {
   animation-delay: 3s;
 }
 main h1 {
@@ -380,10 +380,10 @@ article:hover i {
   transform: rotate(360deg);
   transition: transform 1s;
 }
-article:hover > .test__progress {
+article:hover > .validate_anim {
   margin-right: 0;
 }
-article .test__progress {
+article .validate_anim {
   width: 80px;
   border-radius: 0 10px 10px 0;
   background-color: #99E2D0;
@@ -430,7 +430,7 @@ article .ellipsis p {
 /* ************************************************** RESPONSIVE ************************************************** */
 /* ************************************************** RESPONSIVE ************************************************** */
 @media screen and (min-width: 800px) {
-  #pc {
+  #queries_first-section {
     display: flex;
   }
   #operation {
@@ -447,12 +447,12 @@ article .ellipsis p {
     margin-left: 50px;
     margin-right: 50px;
   }
-  #test {
+  #queries_second-section {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
   }
-  #test .resto {
+  #queries_second-section .resto {
     width: 40%;
   }
 }
@@ -478,16 +478,16 @@ article .ellipsis p {
   }
 }
 @media (min-width: 800px) and (max-width: 1132px) {
-  #res_menus {
+  #queries_menus {
     display: flex;
     flex-wrap: wrap;
   }
-  #res_menus section {
+  #queries_menus section {
     width: 50%;
     margin: auto;
     margin-top: 30px;
   }
-  #res_menus .desserts {
+  #queries_menus .desserts {
     width: 80%;
     margin: auto;
     margin-top: 50px;
@@ -500,15 +500,15 @@ article .ellipsis p {
   }
 }
 @media screen and (min-width: 1132px) {
-  #res_menus {
+  #queries_menus {
     display: flex;
     margin-top: 30px;
   }
-  #res_menus article {
+  #queries_menus article {
     width: 90%;
     margin-bottom: 50px;
   }
-  #res_menus section {
+  #queries_menus section {
     width: 33%;
   }
   .button_restau {

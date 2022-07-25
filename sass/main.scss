@@ -63,7 +63,7 @@ main
     padding-top: 30px;
     padding-bottom: 100px;
 /* ****************************** apparition_animation****************************** */
-    & .ksd
+    & .appears_anim
     {
         @include anim;
         @for $i from 1 through 9
@@ -136,12 +136,12 @@ article
             transform: rotate(360deg);
             transition: transform 1s;       
         }
-        & > .test__progress
+        & > .validate_anim
         {
             margin-right: 0;
         }
     }
-    .test__progress
+    .validate_anim
     {
         width: 80px;
         border-radius: 0 10px 10px 0;
@@ -228,7 +228,7 @@ article
 
 @media screen and (min-width: 800px)
 {
-    #pc
+    #queries_first-section
     {
         display: flex;
     }
@@ -250,7 +250,7 @@ article
         }
 
     }
-    #test
+    #queries_second-section
     {
         display: flex;
         flex-wrap: wrap;
@@ -288,7 +288,7 @@ article
 }
 @media (min-width: 800px) and (max-width: 1132px)
 {
-    #res_menus {
+    #queries_menus {
         display: flex;
         flex-wrap: wrap;
         section {
@@ -311,7 +311,7 @@ article
 }
 @media screen and (min-width: 1132px)
 {
-    #res_menus
+    #queries_menus
     {
         display: flex;
         margin-top: 30px;
